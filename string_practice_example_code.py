@@ -30,6 +30,16 @@ example_string.index("a", 2)
 example_string.find("z")
 example_string.index("z")
 
+with open("spam_song.txt") as fc:
+    spam_song = fc.read()
+
+type(spam_song)
+len(spam_song)
+spam_song.find("spam")
+spam_song[400]
+spam_song[400:404]
+spam_song[390:414]
+
 
 
 
