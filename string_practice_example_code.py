@@ -20,4 +20,16 @@ print("\u2660")
 ###################################
 # find and index
 
-# example with find
+example_string = "banana"
+example_string.count("a")
+example_string.find("a")
+example_string.find("a", 2)
+example_string.index("a")
+example_string.index("a", 2)
+
+example_string.find("z")
+example_string.index("z")
+
+
+
+
