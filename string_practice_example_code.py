@@ -17,3 +17,7 @@ print("She told me, \"don't leave\".")
 print("This\nhas\na lot\nof\nline breaks.\n\n")
 print("\u2660")
 
+###################################
+# find and index
+
+# example with find
