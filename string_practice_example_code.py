@@ -40,6 +40,21 @@ spam_song[400]
 spam_song[400:404]
 spam_song[390:414]
 
+# find ALL of the occurrences
+spam_song.find("spam", 431)
 
+character_number = 0
+spam_locations = []
+while character_number < len(spam_song):
+    found_spam = spam_song.find("spam", character_number)
+    print(found_spam)
+    if found_spam == -1:
+        break
+    spam_locations.append(found_spam)
+    character_number = found_spam + 1
+
+print(spam_locations)
+len(spam_locations)
+spam_song.count("spam")
 
 
