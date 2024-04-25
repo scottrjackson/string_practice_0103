@@ -58,3 +58,7 @@ len(spam_locations)
 spam_song.count("spam")
 
 
+######################
+# starting examples for 4/25
+# starting with startswith and endswith
+
