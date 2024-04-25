@@ -97,3 +97,28 @@ print(data_row[0] + "," +
 print(",".join(data_row))
 
 ######################################
+
+my_courses = ["INST126", "INST314", "462", "STAT100"]
+
+my_courses[0].removeprefix("INST")
+
+course_numbers = []
+for course in my_courses:
+    just_number = course.removeprefix("INST")
+    course_numbers.append(just_number)
+
+print(course_numbers)
+
+file_name = "spam_song.txt".removesuffix(".txt")
+print(file_name)
+
+# replace
+"spam song, spam spam".replace("spam", "Treet")
+"spam song, spam spam".replace("spam", "Treet", 2)
+
+with open("spam_song.txt") as fc:
+    spam_text = fc.read()
+
+treet_text = spam_text.replace("spam", "Treet")
+print(treet_text)
+
