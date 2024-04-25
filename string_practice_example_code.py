@@ -62,3 +62,38 @@ spam_song.count("spam")
 # starting examples for 4/25
 # starting with startswith and endswith
 
+"file_name.txt".endswith(".txt")
+"file_name.py".endswith(".txt")
+
+import os
+
+list_of_files = os.listdir()
+print(list_of_files)
+
+for filename in list_of_files:
+    print(f"let's check to see if {filename} ends with .txt")
+    if filename.endswith(".txt"):
+        print(f"about to open {filename}")
+        with open(filename) as file_connection:
+            print(file_connection.read(100))
+
+
+waitress_lines = []
+with open("spam_song.txt") as file_connection:
+    for line in file_connection:
+        if line.startswith("Waitress"):
+            waitress_lines.append(line)
+
+print(waitress_lines)
+
+print("\n".join(waitress_lines))
+
+data_row = ["student", "year", "gpa"]
+
+print(data_row[0] + "," +
+      data_row[1] + "," +
+      data_row[2])
+
+print(",".join(data_row))
+
+######################################
